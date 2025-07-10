@@ -88,3 +88,9 @@
 .partners > img {
     width: 2.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    .Reasons{
+        flex-direction: column;
+    }
+}
