@@ -15,6 +15,8 @@ const Hero = () => {
         duration: 3
     }
 
+    const mobile = window.innerWidth <= 768 ? true : false;
+
     return (
         <>
             <div className="hero">
@@ -23,7 +25,7 @@ const Hero = () => {
                     <Header />
                     <div className="the-best-ad">
                         <motion.div
-                            initial={{ left: "238px" }}
+                            initial={{ left: mobile ? "173px" : "238px" }}
                             whileInView={{ left: "8px" }}
                             transition={{...transtion, type: "tween"}}
                         ></motion.div>
